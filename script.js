@@ -23,7 +23,9 @@ s128.addEventListener("click", () => {
 
 
 document.addEventListener("DOMContentLoaded", createBoard(16))
+
 function createBoard(size) {
+    
     let board = document.querySelector(".board")
     board.style.gridTemplateColumns = `repeat(${size}, 1fr)`
     board.style.gridTemplateRows = `repeat(${size}, 1fr)`
@@ -38,7 +40,7 @@ function createBoard(size) {
 }
 
 function colorDiv(){
-    //if(click){}
+    
     if (color == "random"){
         this.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`
     }
